@@ -11,11 +11,11 @@ contract lec5 {
 contract Public_example {
     uint256 public a = 3;
 
-    function changeA(uint256 _value) public {
+    function changeA(uint256 _value) external {
         a = _value;
     }
 
-    function get_a() view public returns (uint256) {
+    function get_a() view external returns (uint256) {
         return a;
     }
 }
