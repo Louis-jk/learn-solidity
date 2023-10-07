@@ -19,3 +19,8 @@ contract Father {
     }
 }
 
+contract Son is Father {
+
+    
+
+}
