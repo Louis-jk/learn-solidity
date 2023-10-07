@@ -23,7 +23,11 @@ contract Father {
     }
 }
 
-contract Son is Father("James") {
+contract Son is Father {
+
+    constructor() Father("Janmes") {
+        
+    }
 
     uint256 public earning = 0;
     function work() public {
