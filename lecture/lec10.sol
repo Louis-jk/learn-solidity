@@ -6,6 +6,10 @@ contract Father {
     string public givenName = "Jung";
     uint256 public money = 100;
 
+    constructor(string memory _givenName) public {
+        givenName = _givenName;
+    }
+
     function getFamilyName() view public returns(string memory){
         return familyName;
     }
@@ -19,8 +23,8 @@ contract Father {
     }
 }
 
-contract Son is Father {
+contract Son is Father("James") {
 
-    
+
 
 }
