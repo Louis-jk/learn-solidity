@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-30
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// mapping is key, value. so no have length
 contract Lec17 {
 
     mapping(uint256 => uint256) private ageList;
