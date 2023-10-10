@@ -4,6 +4,8 @@ pragma solidity >= 0.7.0 < 0.9.0;
 contract Lec18 {
 
     uint256[] public ageArray;
+    uint256[10] public ageFixedSizeArray;
+    string[] public nameArray = ['John', 'Marry', 'James'];
 
     function AgeLength() public view returns(uint256) {
         return ageArray.length;
